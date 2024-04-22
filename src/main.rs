@@ -12,6 +12,10 @@ fn process_txns() {
     stdin()
         .read_line(&mut user_ans)
         .expect("Failed to read line");
+
+    user_ans
+        .trim()
+        .to_lowercase();
 }
 
 fn write_txns() {
